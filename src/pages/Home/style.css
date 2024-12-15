@@ -84,7 +84,26 @@
     margin: 10px;
     font-size: 30px;
   }
-  
+  @media only screen and (max-width: 768px) {
+    .testimonial .row {
+        flex-direction: column; /* Stack testimonials in a column */
+        align-items: center; /* Center align them */
+    }
+
+    .testimonial .col-3 {
+        max-width: 100%; /* Make each testimonial take full width */
+        margin-bottom: 20px; /* Add space between testimonials */
+    }
+
+    .testimonial {
+        /* padding-left: 10px; Add padding to the container */
+        /* padding-right: 10px; */
+        width: 100%; /* Ensure the container takes full width */
+        box-sizing: border-box;
+    }
+
+    
+}
   #box:hover {
     /* transform: scale(1.025); */
     border-radius: 5px;

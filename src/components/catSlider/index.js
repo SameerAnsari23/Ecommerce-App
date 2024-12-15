@@ -142,7 +142,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info'style={{ background: '#feefea' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-3.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -151,7 +151,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#ecffec' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-1.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -160,7 +160,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#fff3eb' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-2.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -169,7 +169,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#fff3ff' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-4.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -178,7 +178,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#f2fce4' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -187,7 +187,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#feefea' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -195,8 +195,8 @@ const CatSlider = (props) => {
                         </div>
 
                         
-                        <div className='item'>
-                            <div className='info'>
+                        <div className='item' style={{ background: '#fff3eb' }}>
+                            <div className='info' style={{ background: '#ecffec' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-2.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -205,7 +205,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#fff3ff' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-4.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -214,7 +214,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#f2fce4' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-13.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>
@@ -223,7 +223,7 @@ const CatSlider = (props) => {
 
 
                         <div className='item'>
-                            <div className='info'>
+                            <div className='info' style={{ background: '#feefea' }}>
                                 <img src='https://wp.alithemes.com/html/nest/demo/assets/imgs/shop/cat-5.png'/>
                                 <h5>Cake & Milk</h5>
                                 <p>26 items</p>

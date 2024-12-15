@@ -359,3 +359,15 @@ ul.breadcrumb li a:hover {
 .checkoutPage .card{background: #f1f1f1 !important;}
 
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust height based on your design */
+}
+
+.logo {
+  width: 150px; /* Adjust width based on your needs */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%; /* Ensures responsiveness */
+}
