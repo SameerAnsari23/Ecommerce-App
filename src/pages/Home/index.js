@@ -26,17 +26,17 @@ const Home = (props) => {
     const [bestSells, setBestSells] = useState([]);
     const [isLoadingProducts, setIsLoadingProducts] = useState(false);
 
-    const productRow=useRef();
+    const productRow = useRef();
     const context = useContext(MyContext);
 
     var settings = {
         dots: false,
-        infinite: context.windowWidth<992 ? false : true,
+        infinite: context.windowWidth < 992 ? false : true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
         fade: false,
-        arrows: context.windowWidth<992 ? false : true,
+        arrows: context.windowWidth < 992 ? false : true,
     };
 
     const catArr = [];
@@ -56,7 +56,7 @@ const Home = (props) => {
 
         setactiveTab(list2[0])
 
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
 
     }, [])
 
@@ -78,9 +78,9 @@ const Home = (props) => {
                                 })
 
                             setActiveTabData(arr)
-                            setTimeout(()=>{
+                            setTimeout(() => {
                                 setIsLoadingProducts(false);
-                            },[1000]);
+                            }, [1000]);
                         }
                     }
                 })
@@ -119,7 +119,7 @@ const Home = (props) => {
 
 
     return (
-        <div style={{display:'block'}}>
+        <div style={{ display: 'block' }}>
             <SliderBanner />
             <CatSlider data={prodData} />
 
@@ -142,7 +142,7 @@ const Home = (props) => {
                                                 onClick={() => {
                                                     setactiveTab(cat)
                                                     setactiveTabIndex(index);
-                                                    productRow.current.scrollLeft=0;
+                                                    productRow.current.scrollLeft = 0;
                                                     setIsLoadingProducts(true);
                                                 }}
                                             >
@@ -157,7 +157,7 @@ const Home = (props) => {
                     </div>
 
 
-                    <div className={`productRow ${isLoadingProducts===true && 'loading'}`} ref={productRow}>
+                    <div className={`productRow ${isLoadingProducts === true && 'loading'}`} ref={productRow}>
 
                         {
                             activeTabData.length !== 0 &&
@@ -188,7 +188,7 @@ const Home = (props) => {
 
                     </div>
 
-                    <br className='res-hide' /><br  className='res-hide'/>
+                    <br className='res-hide' /><br className='res-hide' />
                     <div className='row'>
                         <div className='col-md-3 pr-5 res-hide'>
                             <img src={Banner4} className='w-100' />
@@ -241,65 +241,65 @@ const Home = (props) => {
                 </div>
             </section>
             <div className='testimonial'>
-        <h2 className='testimonial-heading'>
-          <a className='effects'>What our Customers say</a>
-        </h2>
-        <br />
-        <div className='small-container' data-aos='fade-up'>
-          <div className='row'>
-            <div className='col-3'>
-              <i className='fa fa-quote-left'></i>
-              <p>
-                The variety of products which are available on the website is amazing. The customers get a wide variety of options to choose and select their favorite one. I highly recommend everyone to check it out.
-              </p>
-              <div className='rating'>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star-o'></i>
-              </div>
-              <img src={user1} alt='User Sean Parker' />
-              <h3>Sean Parker</h3>
+                <h2 className='testimonial-heading'>
+                    <a className='effects'>What our Customers say</a>
+                </h2>
+                <br />
+                <div className='small-container' data-aos='fade-up'>
+                    <div className='row'>
+                        <div className='col-3'>
+                            <i className='fa fa-quote-left'></i>
+                            <p>
+                                The variety of products which are available on the website is amazing. The customers get a wide variety of options to choose and select their favorite one. I highly recommend everyone to check it out.
+                            </p>
+                            <div className='rating'>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star-o'></i>
+                            </div>
+                            <img src={user1} alt='User Sean Parker' />
+                            <h3>Sean Parker</h3>
+                        </div>
+                        <div className='col-3'>
+                            <i className='fa fa-quote-left'></i>
+                            <p>
+                                This is the one website which has all you need for your fashion needs like wristwatches, shoes, t-shirts, shirts, jeans, smartwatches, and a variety of other items. The customer service is also excellent.
+                            </p>
+                            <div className='rating'>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star-o'></i>
+                            </div>
+                            <img src={user2} alt='User Mike Smith' />
+                            <h3>Mike Smith</h3>
+                        </div>
+                        <div className='col-3'>
+                            <i className='fa fa-quote-left'></i>
+                            <p>
+                                What I liked most about this website is its delivery time. I received my order one day after I placed the order which is super fast. Also, the prices are very nominal for the quality which you get.
+                            </p>
+                            <div className='rating'>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star'></i>
+                                <i className='fa fa-star-o'></i>
+                            </div>
+                            <img src={user3} alt='User Mabel Joe' />
+                            <h3>Mabel Joe</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className='col-3'>
-              <i className='fa fa-quote-left'></i>
-              <p>
-                This is the one website which has all you need for your fashion needs like wristwatches, shoes, t-shirts, shirts, jeans, smartwatches, and a variety of other items. The customer service is also excellent.
-              </p>
-              <div className='rating'>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star-o'></i>
-              </div>
-              <img src={user2} alt='User Mike Smith' />
-              <h3>Mike Smith</h3>
-            </div>
-            <div className='col-3'>
-              <i className='fa fa-quote-left'></i>
-              <p>
-                What I liked most about this website is its delivery time. I received my order one day after I placed the order which is super fast. Also, the prices are very nominal for the quality which you get.
-              </p>
-              <div className='rating'>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star'></i>
-                <i className='fa fa-star-o'></i>
-              </div>
-              <img src={user3} alt='User Mabel Joe' />
-              <h3>Mabel Joe</h3>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
-      <script>
-        AOS.init();
-      </script>
+            <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+            <script>
+                AOS.init();
+            </script>
 
         </div>
     )
